@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SFJ-H8-9ql">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Paramètres-->
+        <scene sceneID="bn9-2B-krA">
+            <objects>
+                <viewController title="Paramètres" id="SFJ-H8-9ql" customClass="ParameterViewController" customModule="RogerVoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3RC-yP-Fei">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-eP-YqM">
+                                <rect key="frame" x="0.0" y="79" width="393" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMY-DH-tRs">
+                                        <rect key="frame" x="10" y="10" width="373" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="kN5-3E-YtQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Charger les appels">
+                                            <backgroundConfiguration key="background" cornerRadius="12">
+                                                <color key="backgroundColor" red="0.76862752440000004" green="0.99215686319999996" blue="0.93333333730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loadCalls:" destination="SFJ-H8-9ql" eventType="touchUpInside" id="fnb-ib-cae"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejj-JF-b7Y">
+                                        <rect key="frame" x="10" y="66" width="373" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Vider les appels">
+                                            <backgroundConfiguration key="background" cornerRadius="12">
+                                                <color key="strokeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearCalls:" destination="SFJ-H8-9ql" eventType="touchUpInside" id="itZ-CC-xA8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ejj-JF-b7Y" firstAttribute="leading" secondItem="Rl2-eP-YqM" secondAttribute="leading" constant="10" id="BA8-03-H57"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ejj-JF-b7Y" secondAttribute="bottom" constant="10" id="Ikj-Ce-AYu"/>
+                                    <constraint firstItem="NMY-DH-tRs" firstAttribute="leading" secondItem="Rl2-eP-YqM" secondAttribute="leading" constant="10" id="PrW-DC-z1V"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ejj-JF-b7Y" secondAttribute="trailing" constant="10" id="Q38-ug-4j9"/>
+                                    <constraint firstItem="NMY-DH-tRs" firstAttribute="top" secondItem="Rl2-eP-YqM" secondAttribute="top" constant="10" id="SPl-oE-yXt"/>
+                                    <constraint firstAttribute="trailing" secondItem="NMY-DH-tRs" secondAttribute="trailing" constant="10" id="TtF-cL-adM"/>
+                                    <constraint firstAttribute="height" constant="122" id="WEi-Li-xme"/>
+                                    <constraint firstItem="Ejj-JF-b7Y" firstAttribute="top" secondItem="NMY-DH-tRs" secondAttribute="bottom" constant="10" id="uTh-sL-QvS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e5m-ud-KIe"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rl2-eP-YqM" firstAttribute="leading" secondItem="e5m-ud-KIe" secondAttribute="leading" id="J4h-ci-dNe"/>
+                            <constraint firstItem="Rl2-eP-YqM" firstAttribute="top" secondItem="e5m-ud-KIe" secondAttribute="top" constant="20" id="SO9-t9-GbJ"/>
+                            <constraint firstItem="e5m-ud-KIe" firstAttribute="trailing" secondItem="Rl2-eP-YqM" secondAttribute="trailing" id="yHh-nN-jaL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Paramètres" image="settings - active" selectedImage="settings - active" id="h82-Cs-gqv">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="4"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Paramètres" largeTitleDisplayMode="always" id="rAl-RF-NlL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OqW-ax-iQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings - active" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

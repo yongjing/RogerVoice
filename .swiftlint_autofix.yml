@@ -1,0 +1,27 @@
+included:
+  - RogerVoice/
+
+excluded:
+  - RogerVoice/Base.lproj/
+  - RogerVoice/Resources/
+
+disabled_rules:
+    - trailing_closure
+    - line_length
+    - force_cast
+    - function_parameter_count
+    - function_body_length
+    - cyclomatic_complexity
+    - file_length
+    - force_try
+    - type_body_length
+    - switch_case_alignment
+    - todo
+
+identifier_name:
+    allowed_symbols: ["_"]
+    min_length: 1
+
+large_tuple:
+    warning: 3
+    error: 4
